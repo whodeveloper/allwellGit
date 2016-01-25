@@ -1,0 +1,408 @@
+/************************************
+		HTML Initial Setup
+*************************************/
+@font-face{
+	font-family:skirtFont;
+	src:url('skirtFont.ttf');
+
+}
+
+*{
+	margin: 0;
+}
+
+html{
+	width:100%;
+}
+
+body{
+	background: #ffffff;
+	height: 100%; 
+	/*Put height 100% here otherwise the footer and header will stick together
+	  but this is not happen on Opera, Chrome & Safari.
+	/*#fff7ea;*/
+	/*Make the body smaller the margin can put here*/
+}
+
+.fullwrap{
+	min-height: 100%
+}
+
+
+/************************************
+		Header/Logo/NavBar
+*************************************/
+.header{
+	/*font-family: 'skirtFont';*/
+	background-color: #33ffff;
+	/*#b6c5e0;*/
+	color: #ffffff;
+	/*font-family: 'Karla', sans-serif;*/
+	font-family: 'Montserrat', sans-serif;
+	/*font-family: 'Quattrocento Sans', sans-serif;*/
+	height: 120px;
+	padding: 23px;
+	/*border-bottom-style: outset;*/
+	position: relative;
+}	
+
+/*.logo{
+	float: left;
+
+}*/
+.logo{
+	position: absolute;;
+}
+
+/*.logo_big{*/
+	/*float:left;*/
+	/*position: absolute;*/
+/*}*/
+
+/**************** The Code Below Is For Flexible Logo **************/
+.logo_big img{
+	max-width: 100%;
+    height: auto;
+}
+
+.navmenu{
+	/*float: right;*/
+	font-size: 17pt;
+	margin:10px 15px 0px 0px;
+	max-width: 100%;
+	position: absolute;
+	right:0px;
+}
+
+
+.navmenu ul li{
+	display: block;
+	padding-right: 6px;
+	/*Padding can incerase space between categories*/
+}
+
+.navmenu ul li a{
+	text-decoration: none;
+	color: 	#493c38;
+	/*#343d46;*/
+	font-weight: 900; /*Or Bold */
+}
+
+/*Underline From Center*/
+.hvr-underline-from-center {
+  display: inline-block; /*No Effect*/
+  vertical-align: top; /*No Effect*/
+  -webkit-transform: translateZ(0); /*No Effect*/
+  transform: translateZ(0); /*No Effect*/
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0); /*No Effect*/
+  -webkit-backface-visibility: hidden; /*No Effect*/
+  backface-visibility: hidden; /*No Effect*/
+  -moz-osx-font-smoothing: grayscale; /*No Effect*/
+  position: relative; /*No Effect*/
+  overflow: hidden; /*No Effect*/
+}
+.hvr-underline-from-center:before {
+  content: "";
+  position: absolute;
+  z-index: -1; /*No Effect*/
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  background: #888888;
+  /*#ffa500;*/
+  height: 3px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+  left: 0;
+  right: 0;
+}
+
+/*div.navmenu a:hover {
+	color: yellow;
+****Use this to style the element within the div
+}*/
+
+/************************************
+		Footer & Footer Info
+*************************************/
+.footer{
+	background-color: #33ffff;
+	color: #ffffff;
+	padding: 35px 0px 35px;
+	height: 100px;
+	font-family: 'Karla', sans-serif;
+}
+
+.contact_footer{
+	width: 200px;
+	float: right;
+	margin-right: 35px;
+}
+
+/************************************
+			index.php
+*************************************/
+.main_page{
+	width: 100%;
+}
+
+.cleaning{
+	max-width: 100%;
+	height: auto;
+	margin: 0 auto 0 auto;
+	background: #ffffff;
+	font-family: 'Montserrat', sans-serif;
+
+}
+
+.cleaning_title{
+	width: 100%;
+	height:4%;
+	background: #75a7c4;
+	color: #ffffff;
+	text-align: center;
+	font-size: 21pt;
+	padding-top:5px;
+	padding-bottom: 9px;
+
+}
+
+.cleaning_menu_wrap{
+	/*3 lines below are the KEY to align element to the center VERTICALLY*/
+	width: 20%;
+	height: 200px;
+	position:relative;
+  	top:50%;
+  	transform:translateY(-80%);
+  	float: left;
+}
+
+.cleaning_menu{
+	width: 230px;
+	height:20px;
+	padding: 10px;
+	background-color: #ffa500;
+	color: #ffffff;
+	text-align: center;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	border-radius: 3px;
+	font-family: 'Quattrocento Sans', sans-serif;
+	font-size: 12pt;
+	box-shadow: 10px 10px 5px #888888;
+}
+
+/**********Image Slider Section**********/
+#container {
+   margin:10px auto 10px;
+   padding:10px;
+   width:700px;
+   }
+ 
+#slider {
+   display:block;
+   width:100%;
+   height:300px;
+   padding:0;
+   margin:0 0 10px;
+   overflow:hidden;
+   }  
+ 
+#prev, #next {
+   bottom:0;
+   display:block;
+   width:120px;
+   background-color:#00ABFF;
+   padding:5px;
+   border:none;
+   font-size:17px;
+   color:#fffff;
+   }
+ 
+#prev {
+   float:left;
+   }
+ 
+#next {
+   float:right;
+   }
+
+#slides{
+	width: 700px;
+	height:auto;
+
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+
+.pest_control{
+	width: 100%;
+	height:637px;
+	background: #b3ebf6;
+	color: #ffffff;
+	text-align: center;
+	font-size: 21pt;
+	position: relative;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.pest_control_title{
+	width: 100%;
+	height:7%;
+	background: #6497b1;
+	color: #ffffff;
+	text-align: center;
+	font-size: 21pt;
+	padding-top: 8px;
+	position: absolute;
+}
+
+.products{
+	width: 100%;
+	height:637px;
+	background: #364c4c;
+	color: #ffffff;
+	text-align: center;
+	font-size: 21pt;
+	position: relative;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.products_title{
+	width: 100%;
+	height:7%;
+	background: #6497b1;
+	color: #ffffff;
+	text-align: center;
+	font-size: 21pt;
+	padding-top: 8px;
+	position: absolute;
+}
+
+/************************************
+			contact.php
+*************************************/
+.contact_wrap{
+	min-width: 1300px;
+	clear:both;
+}
+
+.location_info{
+	width:600px;
+	margin:5% 100px 5% 40px;
+	text-align: center;
+	line-height: 47px;
+	font-size: 14pt;
+	float: left;
+}
+
+.location_title{
+	width:600px;
+	height:50px;
+	background-color: #c6c1a6;
+	color: #000000;
+	margin-bottom: 10px;
+	font-family: 'Quattrocento Sans', sans-serif;
+	border-radius: 2px;
+}
+
+.contact_info{
+	width:600px;
+	margin:5% 0px 5% 10px;
+	text-align: center;
+	line-height: 47px;
+	font-size: 18pt;
+	float: left;
+	font-size: 14pt;
+}
+
+.contact_info a{
+	color:#000000;
+}
+
+.contact_title{
+	width:600px;
+	height:50px;
+	background-color: #ffa500;
+	color: #000000;
+	margin-bottom: 10px;
+	font-family: 'Quattrocento Sans', sans-serif;
+	border-radius: 2px;
+}
+
+legend{
+	background-color: #badaee;
+	border:0px solid;
+	border-radius: 3px;
+	padding:10px 20px;
+	text-align: left;
+	text-transform: uppercase;
+	font-family: 'Karla', sans-serif;
+}
+fieldset{
+	border-radius: 0px;
+	font-family: 'Karla', sans-serif;
+	border:0px;
+}
+
+/************************************
+		For Fun Only: DWD;
+************************************
+/*.cleaning{
+	width:100px;
+	height:100px;
+	margin: 50px;
+	background: red;
+	-webkit-transition: height 2s;
+}
+
+.cleaning:hover{
+	height: 1000px;
+}*/
+
+/************************************
+		Position Explain
+*************************************/
+/*postion:absolute (top left right bottom start to adjust from the HTML page - the full page)*/
+/*position:relative (start to adjust from the parent div also use Top Left Right Bottom)*/
+/*Can use position relative as parent div and use position relative as child div, it make it more easy
+to style */
+
+/*Important Note !!! If you want to stick menu bar on the top when user scroll down use position:fixed and top0 left0 or right 0;
+/*Below code use for put 2 div inside a parent div and adjust easily*/
+/*.header{
+  background:red;
+  width:500px;;
+  height:400px;
+  position:relative;
+}
+
+.logo{
+  background:yellow;
+  width:100px;
+  height:100px;
+  position:absolute;
+  top:50px;
+  left:50px;
+}
+
+.navmenu{
+  background:blue;
+  width:100px;
+  height:100px;
+  position:absolute;
+  left:180px;
+  top:50px;
+}*/
+
+
+
+

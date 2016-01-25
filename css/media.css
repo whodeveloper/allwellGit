@@ -1,0 +1,56 @@
+/************************************
+		@Media Screen Only
+*************************************/
+@media screen and (min-width: 700px){
+	.logo_big{
+		display: block;
+	}
+
+	.logo_medium{
+		display: none;
+	}
+
+	.logo_small{
+		display: none;
+	}
+}
+@media screen and (max-width: 980px){
+	.logo_big{
+		display: none;
+	}
+	.logo_medium{
+		display:block;
+		margin-top: 10px;
+	}
+
+	.logo_small{
+		display:none;
+	}
+
+	.navmenu{
+		float: right;
+		font-size: 13pt;
+		margin:20px 0px 0px 0px;
+	}
+
+	ul li{
+	display: block;
+	padding-right: 8px;
+
+	}
+
+@media screen and (max-width: 740px){
+	.logo_big{
+		display: none;
+	}
+
+	.logo_medium{
+		display:none;
+	}
+
+	.logo_small{
+		display: block;
+		margin-top: 17px;
+	}
+
+}
