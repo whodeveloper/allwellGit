@@ -1,12 +1,6 @@
 /************************************
 		HTML Initial Setup
 *************************************/
-@font-face{
-	font-family:skirtFont;
-	src:url('skirtFont.ttf');
-
-}
-
 *{
 	margin: 0;
 }
